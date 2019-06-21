@@ -7,7 +7,7 @@
 			<img class="card-img-top" src="https://iocaffcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/" alt="{{ $user->name }}" />
 			<div class="card-body">
 				<h5><strong>个人简介</strong></h5>
-				<p>{{ $user->introdunction }}</p>
+				<p>{{ $user->introduction }}</p>
 				<hr>
 				<h5><strong>注册于</strong></h5>
 				<p>{{ $user->created_at->diffForHumans() }}</p>
