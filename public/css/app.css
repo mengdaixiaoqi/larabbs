@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@charset "UTF-8";
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -16981,17 +16981,11 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Brands";
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 /* universal */
 
 body {
   font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
   font-size: 14px;
-  margin-bottom: 60px;
 }
 
 /* header */
@@ -17004,6 +16998,18 @@ body {
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 40px;
   margin-top: 0px;
+}
+
+/* Sticky footer styles */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
 
 .footer {
@@ -17041,7 +17047,8 @@ body {
 /* Topic Index Page */
 
 .topics-index-page .topic-list .nav > li > a,
-.categories-show-page .topic-list .nav > li > a {
+.categories-show-page .topic-list .nav > li > a,
+.root-page .topic-list .nav > li > a {
   position: relative;
   display: block;
   padding: 5px 14px;
@@ -17049,28 +17056,33 @@ body {
 }
 
 .topics-index-page .topic-list a,
-.categories-show-page .topic-list a {
+.categories-show-page .topic-list a,
+.root-page .topic-list a {
   color: #444444;
 }
 
 .topics-index-page .topic-list .meta,
-.categories-show-page .topic-list .meta {
+.categories-show-page .topic-list .meta,
+.root-page .topic-list .meta {
   font-size: 0.9em;
   color: #b3b3b3;
 }
 
 .topics-index-page .topic-list .meta a,
-.categories-show-page .topic-list .meta a {
+.categories-show-page .topic-list .meta a,
+.root-page .topic-list .meta a {
   color: #b3b3b3;
 }
 
 .topics-index-page .topic-list .badge,
-.categories-show-page .topic-list .badge {
+.categories-show-page .topic-list .badge,
+.root-page .topic-list .badge {
   background-color: #d8d8d8;
 }
 
 .topics-index-page .topic-list hr,
-.categories-show-page .topic-list hr {
+.categories-show-page .topic-list hr,
+.root-page .topic-list hr {
   margin-top: 12px;
   margin-bottom: 12px;
   border: 0;
@@ -17549,5 +17561,31 @@ body {
   margin: 0.4em auto 0.6em;
   font-size: 28px;
   line-height: 38px;
+}
+
+/* 回复列表 */
+
+.topic-reply a {
+  color: inherit;
+}
+
+.topic-reply .meta {
+  font-size: 0.9em;
+  color: #b3b3b3;
+}
+
+/* 消息通知 */
+
+.notification-badge .badge {
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+.notification-badge .badge-secondary {
+  background-color: #EBE8E8;
+}
+
+.notification-badge .badge-hint {
+  background-color: #d15b47 !important;
 }
 
