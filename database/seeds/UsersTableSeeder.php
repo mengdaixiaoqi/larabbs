@@ -40,7 +40,7 @@ class UsersTableSeeder extends Seeder
         // 单独处理第一个用户的数据
         $user = User::find(1);
         $user->name = 'badboy';
-        $user->password = '123456';
+        $user->password = '$2y$10$4zVQFRO/gewIpn/XPJsaTehcGOavMVNqSFe1zEHWV1wZ7f9Ev0HB6';
         $user->email = '1669003066@qq.com';
         $user->avatar = 'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png';
         $user->save();
