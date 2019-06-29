@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use App\Observers\UserObserver;
 use App\Observers\ReplyObserver;
 use App\Observers\TopicObserver;
+use App\Observers\LinkObserver;
 use App\Models\Reply;
 use App\Models\Topic;
 use App\Models\User;
@@ -34,6 +35,6 @@ class AppServiceProvider extends ServiceProvider
         User::observe(UserObserver::class);
         Reply::observe(ReplyObserver::class);
         Topic::observe(TopicObserver::class);
-        //Carbon::setLocale('zh');
+        \App\Models\Link::observe(\App\Observers\LinkObserver::class);
     }
 }
